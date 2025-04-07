@@ -1,0 +1,9 @@
+{
+  "plugin_name": "nac_patch_clearpass",
+  "plugin_type": "nac",
+  "entry_point": "main.py",
+  "description": "Plugin ClearPass con OAuth2 y método PATCH",
+  "version": "1.0.0",
+  "author": "digitalintegrators",
+  "dependencies": []
+}
