@@ -1,0 +1,21 @@
+plugin_name: nac_patch_clearpass
+plugin_type: nac
+nac_type: clearpass
+clearpass_host: https://cppmpub.laboratorios.digital
+auth_type: oauth2
+client_id: netskope_ce
+client_secret: fa33a099c236207dcbb316a9ae9287a57563049e
+grant_type: client_credentials
+severity_threshold: high
+
+attribute_mapping:
+  netskope_threat_detected: "true"
+  last_check_by_netskope: "$timestamp"
+  Ur Normalized: "$ur_normalized"
+  Hostname: "$hostname"
+  incident_id: "$incident_id"
+  internalip: "$userip"
+  egressip: "$srcip"
+  incident_prio: "$severity"
+  incident_severity: "$malware_type"
+  policyname: "$policy"
